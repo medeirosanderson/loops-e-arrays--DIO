@@ -32,5 +32,6 @@ public class Ex4_ParEImpar {
 
         System.out.println("Quantidade de números pares: " + countPares);
         System.out.println("Quantidade de números ímpares: " + countImpares);
+        scan.close();
     } 
 }

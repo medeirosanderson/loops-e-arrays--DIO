@@ -26,5 +26,6 @@ public class Ex2_Nota {
         }
         System.out.println("Você inseriu a nota:  " + nota);
         System.out.println("Programa encerrado!");
+        scan.close();
     }
 }

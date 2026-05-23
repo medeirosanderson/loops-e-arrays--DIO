@@ -1,5 +1,4 @@
 package br.com.dio.exercicios.loops;
-
 import java.util.Scanner;
 
 /*
@@ -29,5 +28,6 @@ public class Ex5_Tabuada {
             System.out.println(numero + " X " + i + " = " + (numero * i));
         }
         System.out.println("=================================================");
+        scan.close();
     }
 }

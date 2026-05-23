@@ -25,5 +25,6 @@ public class Ex1_NomeEIdade {
             idade = scan.nextInt();
         }
     System.out.println("Programa encerrado!");
+    scan.close();
     }
 }
