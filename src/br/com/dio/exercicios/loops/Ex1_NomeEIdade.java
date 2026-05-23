@@ -23,6 +23,7 @@ public class Ex1_NomeEIdade {
             }
             System.out.println("Digite a idade: ");
             idade = scan.nextInt();
+            System.out.println("Nome: " + nome + " - Idade: " + idade);
         }
     System.out.println("Programa encerrado!");
     scan.close();
