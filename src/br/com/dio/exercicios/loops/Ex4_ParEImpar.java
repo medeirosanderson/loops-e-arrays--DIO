@@ -7,29 +7,30 @@ Faça um programa que peça N números inteiros,
 calcule e mostre a quantidade de números pares
 e a quantidade de números impares.
 */
+
 public class Ex4_ParEImpar {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        int quantNumeros;
         int numero;
-        int quantPares = 0, quantImpares = 0;
+        int countPares = 0;
+        int countImpares = 0;
 
-        System.out.println("Quantidade de números: ");
-        quantNumeros = scan.nextInt();
+        System.out.println("Quantos números inteiros você vai digitar? ");
+        int quantidadeNumeros = scan.nextInt();
 
-        int count = 0;
-        do {
+        for (int i = 0; i < quantidadeNumeros; i++) {
             System.out.println("Número: ");
             numero = scan.nextInt();
 
-            if (numero % 2 == 0 ) quantPares++;
-            else quantImpares++;
+            if (numero % 2 == 0) {
+                countPares++;
+            } else {
+                countImpares++;
+            }
+        }
 
-            count++;
-        } while(count < quantNumeros);
-
-        System.out.println("Quantidade Par: " + quantPares);
-        System.out.println("Quantidade Ímpar: " + quantImpares);
-    }
+        System.out.println("Quantidade de números pares: " + countPares);
+        System.out.println("Quantidade de números ímpares: " + countImpares);
+    } 
 }
